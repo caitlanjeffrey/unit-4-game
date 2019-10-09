@@ -12,43 +12,58 @@
 
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <div class="jumbotron">
-            <h1 class="display-4">Welcome, Pick the Crystals that Match The Number!</h1>
-                <p class="lead">The purpose of the game is to gather the correct amout of crystals</p>
+            <h1 class="display-4">Welcome!
+            <h1 class="display-4">Add Crystals To Complete The Computer's Order!</h1>
+            <br>
+                <p class="lead">The purpose of the game is to gather the correct amount of crystals to equal the order total.</p>
+                <p>The Computer will pick an order total, it is up to you to match the crystals to the order total.</p>
             <hr class="my-4">
-                <p>You'll have unlimited guesses to match the computers number.</p>
+                <p><strong>Order Total: </strong>
+                    <span id="order-total"></span>
+                </p>
+                <p><strong>Your Total: </strong>
+                    <span id="your-total"></span>
+                </p>
             <hr class="my-4">
-                <p id="userguess"><strong>Computer Guessed:</strong></p>
+                <p><strong>Games Won: </strong>
+                    <span id="wins"></span>
+                </p>
+                <p><strong>Games Lost: </strong>
+                    <span id="loss"></span>
+                </p>
             </div>
     </div><!--end of jumbotron container header-->
     
-    <div class="container-psychic-game">
+    <div id="container-crystal-game">
         <div class="card-group">
             <div class="card" style="width: 18rem;">
-                <img src="assets/images/clear_quartz.jpg" class="card-img-top" alt="CrystalOne">
+                <img src="assets/images/Clear-Quartz.png" class="card-img-top" alt="CrystalOne">
                 <div class="card-body">
-                    <h5 class="card-title">Clear Quartz</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Smoky Quartz</h5>
+                    <p class="card-text">Hold Smoky Quartz to relieve tension and stress, anxiety, or panic attacks; also to ward off negative thinking, and to eliminate worry and doubt when faced with chaos or confusion.</p>
+                    <a href="#" class="btn btn-primary" id="crystal-one" index="0">Add To Order</a>
                 </div>
             </div><!--end of crystalOne-->
 
             <div class="card" style="width: 18rem;">
                 <img src="assets/images/pink_crystal.jpg" class="card-img-top" alt="CrystalOne">
                 <div class="card-body">
-                    <h5 class="card-title">Pink Quartz</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Rose Quartz</h5>
+                    <p class="card-text">Also known as 'pink quartz', these crystals carry a soft feminine energy of compassion and peace, tenderness and healing, nourishment and comfort.</p>
+                    <a href="#" class="btn btn-primary" id="crystal-two" index="1">Add To Order</a>
                 </div>
             </div><!--end of crystalTwo-->
+        </div><!--end of card group-->
 
+        <div class="card-group group-1">
             <div class="card" style="width: 18rem;">
                 <img src="assets/images/rainbow_crystal.jpg" class="card-img-top" alt="CrystalOne">
                 <div class="card-body">
                     <h5 class="card-title">Rainbow Amethyst</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">feminine energy of compassion and peace, tenderness and healing, nourishment and comfort.</p>
+                    <a href="#" class="btn btn-primary" id="crystal-three"index="2">Add To Order</a>
                 </div>
             </div><!--end of crystalThree-->
 
@@ -56,8 +71,8 @@
                 <img src="assets/images/purple_crystals.jpeg" class="card-img-top" alt="CrystalOne">
                 <div class="card-body">
                     <h5 class="card-title">Purple Amethyst</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">These purple quartz gems are worn to protect people, quiet the mind and help control addictions.</p>
+                    <a href="#" class="btn btn-primary" id="crystal-four" index="3">Add To Order</a>
                 </div>
             </div><!--end of crystalFour-->
         </div><!--end of card group-->
@@ -68,7 +83,7 @@
     </footer><!--end of footer-->
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/javascript/javascript.js">
+    <script src="assets/javascript/javascript.js"></script>
         
 </body>
 </html>
